@@ -1,11 +1,8 @@
-let arr = [];
 
-function rotateLeft(n, d) {
+function rotateLeft(arr, d) {
 
-    for (let i = 1; i <= n; i++) {
-        arr.push(i);
-    }
-
+    let n = arr.length;
+    d = d%n ;
     for (let j = 0; j < d; j++) {
         let firstItem = arr.shift();
         arr.push(firstItem);
@@ -14,6 +11,8 @@ function rotateLeft(n, d) {
     return arr;
 }
 
-const test = rotateLeft(5, 4);
 
+let arr = [1,2,3,4,5];
+let d = 4;
+const test = rotateLeft(arr, d);
 console.log(test)
