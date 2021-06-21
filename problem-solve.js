@@ -11,8 +11,7 @@ function rotateLeft(arr, d) {
     return arr;
 }
 
-
-let arr = [1,2,3,4,5];
 let d = 4;
+let arr = [1,2,3,4,5];
 const test = rotateLeft(arr, d);
 console.log(test)
